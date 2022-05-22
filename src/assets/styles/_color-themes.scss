@@ -1,0 +1,12 @@
+@import './component-variables/typography';
+
+:root {
+  $colors: (
+    $typographyColorsDefault,
+  );
+  @each $key_name in $colors {
+    @each $key_name_2, $value in $key_name {
+      --#{$key_name_2}: #{$value};
+    }
+  }
+}
