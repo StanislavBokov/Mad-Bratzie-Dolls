@@ -8,7 +8,8 @@ export interface ButtonProps {
     size?: 'lg' | 'md' | 'sm';
     disable?: boolean;
     icon?: boolean;
-    children: ReactNode
+    children: ReactNode;
+    onClick?: () => void
 }
 
 export const Button:FC<ButtonProps> = ({ 
@@ -16,7 +17,8 @@ export const Button:FC<ButtonProps> = ({
   size = 'sm', 
   disable = false, 
   icon, 
-  children
+  children,
+  onClick
 }) => {
   return (
     <button className={cn(
@@ -26,7 +28,8 @@ export const Button:FC<ButtonProps> = ({
       { [styles.disable]: disable },
       { [styles.icon]: icon }
     )}
-    disabled={disable} 
+    disabled={disable}
+    onClick={onClick} 
     >
       {children}
     </button>

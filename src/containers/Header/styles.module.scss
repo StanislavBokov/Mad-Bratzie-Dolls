@@ -1,0 +1,25 @@
+@import '../../assets/styles/color-themes';
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/normalize';
+.header {
+    @include flexbox(space-between);
+    @include centered();
+    padding: spacing(2, 6);
+
+    .navigationList {
+        width: 500px;
+        
+        ul {
+            @include flexbox(space-between);
+
+            li {
+
+            }
+        }
+    }
+}
+@include forDesktopBig {
+    .navigationList {
+        display: none;
+    }
+}

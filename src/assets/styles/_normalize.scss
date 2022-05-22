@@ -6,8 +6,8 @@ div[id='root'] {
   height: 100%;
   width: 100%;
   border: 0;
-  background: $colorBlack400;
-  font-family: $default-font, sans-serif;
+  // background: $colorBlack400;
+  // font-family: $default-font, sans-serif;
 
   div,
   input,
@@ -17,7 +17,7 @@ div[id='root'] {
   button,
   textarea {
     box-sizing: border-box;
-    margin: 0;
+    // margin: 0;
     font-size: inherit;
     line-height: inherit;
     transition: 200ms;
@@ -42,7 +42,9 @@ div[id='root'] {
 
   ul,
   ol {
+    padding:0;
     margin: 0;
+    list-style: none;
   }
 
   a {
