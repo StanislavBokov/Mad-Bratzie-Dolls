@@ -3,6 +3,9 @@ import { H3, Button, Text } from "../../components";
 import { helperList } from "./Header.helper";
 import { MetamaskLogo } from "../../assets/icons";
 import { HashLink } from 'react-router-hash-link';
+import { upDateAddress } from "../../store/user/actions.";
+import { useSelector, RootStateOrAny, useDispatch } from 'react-redux';
+import shortenPhrase from "../../utils/shortenPhrase";
 import styles from './styles.module.scss';
 
 declare global {
@@ -14,11 +17,12 @@ declare global {
 
 export const Header: FC = () => {
 
- 
+  const { address } = useSelector((state:RootStateOrAny) => state.user);
+  const dispatch = useDispatch();
+  console.log(address);
+  
   const buttonConnect = async () => {
-    const account = await window.ethereum.request({ method: 'eth_requestAccounts' });
-    console.log(account);
-    
+    dispatch(upDateAddress());
   };
 
   return (
@@ -27,7 +31,7 @@ export const Header: FC = () => {
       <nav className={styles.navigationList}>
         <ul>
           {helperList.map((list) => (
-            <li>
+            <li key={list.id}>
               <HashLink
                 smooth
                 to={list.routes}
@@ -44,7 +48,7 @@ export const Header: FC = () => {
         onClick={buttonConnect}
       >
         <img src={MetamaskLogo} alt="Metamask logo" />
-        Connect Wallet
+        {address.length ? shortenPhrase(address[0]) : 'Connect Wallet'}
       </Button>
     </div>
   );
