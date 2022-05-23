@@ -1,0 +1,47 @@
+
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/color-themes';
+.mainTitle {
+    padding-bottom: spacing(5.75);
+    width: 100%;
+}
+.wrapperCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    @include centered();
+  
+}
+.cardItem {
+    background-color: var(--card-default-background);
+    border-radius: 24px;
+    max-width: 500px;
+    padding: spacing(4.25,6.5);
+
+    & .title {
+        padding-bottom: 20px;
+    }
+    & .description{
+        padding-right: 10px;
+        max-width: 280px;
+    }
+}
+
+
+@include forTablet{
+    .wrapperCard {
+      display: block;  
+    }
+    .cardItem{
+        width: 100%;
+        padding: spacing(3);
+        margin-bottom: spacing(3);
+
+    }
+}
+@include forDesktopSm {
+    .wrapperCard {
+        @include flexbox(center, center, column);
+      }
+}

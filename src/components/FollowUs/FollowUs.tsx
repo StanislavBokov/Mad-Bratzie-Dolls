@@ -15,8 +15,7 @@ export const FollowUs: React.FC = () => {
           <a href={href} key={id} target="_blank" rel="noonpener noreferrer">
             <Card className={styles.followCard}>
               <img src={icon} alt={name} />
-              <H3 className={styles.name} weight="medium">{name}</H3>
-              
+              <H3 className={styles.name} weight="medium">{name}</H3>            
             </Card>
           </a>
         ))}

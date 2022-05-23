@@ -1,5 +1,6 @@
 $defaultFlexBoxAlign: center;
 $defaultFlexBoxJustify: center;
+$defaultFlexBoxDirection: row;
 
 @mixin centered() {
   margin: 0 auto;
@@ -11,18 +12,11 @@ $defaultFlexBoxJustify: center;
   }
 }
 
-@mixin flexbox($justify: $defaultFlexBoxJustify, $align: $defaultFlexBoxAlign) {
+@mixin flexbox($justify: $defaultFlexBoxJustify, $align: $defaultFlexBoxAlign, $flexDirection: $defaultFlexBoxDirection) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
-}
-
-@mixin flex($direction: row, $alignment: normal, $justification: normal, $wrap: wrap) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justification;
-  align-items: $alignment;
-  flex-wrap: $wrap;
+  flex-direction: $flexDirection;
 }
 
 @mixin imgCenter {
