@@ -1,0 +1,12 @@
+@import './color-constants';
+
+$cardColorDefault: (
+  // background
+
+  'card-default-background': transparent,
+
+  // border
+
+  'card-default-border': $colorBlack
+
+);

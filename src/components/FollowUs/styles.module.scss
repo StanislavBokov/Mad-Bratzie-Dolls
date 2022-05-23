@@ -1,0 +1,25 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/color-themes';
+
+.followUs { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(343px,1fr));
+    gap: spacing(3);
+    @include centered();
+}
+.title {
+    padding-bottom: spacing(4);
+}
+
+
+.followCard {  
+    @include flexbox(align-items);
+    border-radius: spacing(3);
+    padding: spacing(2.5, 1, 2.5, 5.25) !important;
+    position: relative;
+    width: 100%;
+  }
+
+  .name {
+    padding-left: spacing(2);
+  }
