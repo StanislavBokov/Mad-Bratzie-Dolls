@@ -4,9 +4,9 @@ $defaultFlexBoxJustify: center;
 @mixin centered() {
   margin: 0 auto;
   width: 100%;
-  max-width: 1050px;
+  max-width: 1350px;
   @media screen and (max-width: 981px) {
-    padding: spacing(0, 1);
+    padding: spacing(2, 4);
   }
 }
 
