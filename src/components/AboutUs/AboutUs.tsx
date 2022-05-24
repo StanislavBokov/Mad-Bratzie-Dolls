@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 export const AboutUs: React.FC = () => {
   return (
-    <>
+    <div id="about">
       <H1 align="center" className={styles.mainTitle}>About us</H1>
       <div className={styles.wrapperCard}>
         {aboutUsHelper.map((card) => (
@@ -17,6 +17,6 @@ export const AboutUs: React.FC = () => {
           </Card>
         ))}
       </div>
-    </>
+    </div>
   );
 };

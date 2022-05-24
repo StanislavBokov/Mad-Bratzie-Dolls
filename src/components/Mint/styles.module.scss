@@ -30,7 +30,7 @@
             border: none;
             border-radius: 10px;
             min-height: 270px;
-            background-color: rgb(240, 232, 237);
+            background-color: white;
             @include flexbox(space-between, space-between, column);
 
             .wrapBNBAmount {
