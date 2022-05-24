@@ -1,0 +1,7 @@
+export const roadMapHelper = [
+  { id: 1,title: 'Activate your profile', description: 'You’ll need an active your Profile to buy Minting Tickets and mint a Mad Bratzie Dolls NFT!' },
+  { id: 2,title: 'Hold Dolls', description: 'Each NFT costs 0.02 BNB to mint. Remember you also need BNB to cover transaction fees too!' },
+  { id: 3,title: 'Buy Dolls Tickets', description: 'Buy Dolls Tickets, while stocks last. You’ll use them in step 4.04:00 UTC, Oct. 7 Pre-sale: Wallets which held “Gen 0” Bratzie NFTs (bunnyID 0,1,2,3,4) at a snapshot taken some time between 12 and 2 hours before the presale begins can purchase one Dolls Ticket per Gen 0 NFT.08:00 UTC, Oct. 7 Public Sale: Any wallet with an active your Profile can purchase up to 10 Dolls Tickets, while stocks last.' },
+  { id: 4,title: 'Claim Phase', description: 'During this phase, any wallet holding a Dolls Ticket can redeem their ticket to claim a Mad Bratzie Dolls NFTs.' },
+  { id: 5,title: 'Wait for the Reveal', description: 'It’ll take a few days before your doll’s image is revealed. Just hold tight and wait for the final image!Trading will open before the images are live, but you’ll still be able to check the bratzies’ stats.' }
+];

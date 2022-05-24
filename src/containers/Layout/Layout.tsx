@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Header } from "../Header";
-import { FollowUs, AboutUs, Mint } from "../../components";
+import { FollowUs, AboutUs, Mint, RoadMap } from "../../components";
 import styles from './styles.module.scss';
 
 export const Layout:FC = () => {
@@ -8,6 +8,7 @@ export const Layout:FC = () => {
     <div className={styles.main}>
       <Header />
       <Mint />
+      <RoadMap />
       <AboutUs />
       <FollowUs />
     </div>
