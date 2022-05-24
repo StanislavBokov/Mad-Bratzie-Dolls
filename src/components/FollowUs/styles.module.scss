@@ -29,7 +29,9 @@
 
 @include forTablet {
   .FolloweUs {
-
+    .title {
+      font-size: 40px;
+    }
     .followCardWrapper {
       grid-template-columns: none;
       gap: spacing(2);
