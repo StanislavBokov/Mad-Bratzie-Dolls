@@ -1,0 +1,14 @@
+// @import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.wrapper {
+  background: var(--card-default-background);
+  border: 1px solid var(--card-default-border);
+ 
+}
+.md {
+  padding: spacing(4);
+}
+.sm {
+  padding: spacing(2)
+}

@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren, createElement, CSSProperties } from 'react';
 import cn from 'clsx';
-import { TextAlign as Align, TextColor as Color, TextSize as Size, TextWeight as Weight } from '../types';
+import { TextAlign as Align, TextColor as Color, TextSize as Size, TextWeight as Weight } from '../../types';
 
 import styles from './styles.module.scss';
 

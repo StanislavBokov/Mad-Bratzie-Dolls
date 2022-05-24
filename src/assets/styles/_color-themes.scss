@@ -1,8 +1,12 @@
 @import './component-variables/typography';
+@import './component-variables/button';
+@import './component-variables/card';
 
 :root {
   $colors: (
     $typographyColorsDefault,
+    $buttonColorsDefault,
+    $cardColorDefault
   );
   @each $key_name in $colors {
     @each $key_name_2, $value in $key_name {

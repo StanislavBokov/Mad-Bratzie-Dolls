@@ -1,0 +1,51 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/color-themes';
+
+.FolloweUs {
+  margin-top: spacing(10);
+
+  .title {
+    padding-bottom: spacing(3);
+  }
+  .followCardWrapper { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(343px,1fr));
+    gap: spacing(3);
+    @include centered();
+
+    .followCard {  
+      @include flexbox(align-items);
+      border-radius: spacing(3);
+      padding: spacing(2.5, 1, 2.5, 5.25) !important;
+      position: relative;
+      width: 100%;
+
+      .name {
+        padding-left: spacing(2);
+      }
+    }
+  }
+}
+
+@include forTablet {
+  .FolloweUs {
+
+    .followCardWrapper {
+      grid-template-columns: none;
+      gap: spacing(2);
+
+      .followCard {
+          padding: spacing(2, 1, 2, 5.25) !important;
+      }
+
+      .name {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+ 

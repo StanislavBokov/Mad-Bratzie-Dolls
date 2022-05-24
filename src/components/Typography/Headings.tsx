@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import cn from 'clsx';
-import { HeadingType, TextAlign as Align, TextColor as Color, TextWeight as Weight } from '../types';
+import { HeadingType, TextAlign as Align, TextColor as Color, TextWeight as Weight } from '../../types';
 import styles from './styles.module.scss';
 
 type Props = {
