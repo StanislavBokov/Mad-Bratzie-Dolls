@@ -18,7 +18,7 @@ export const Mint:React.FC = () => {
   
   };
   return (
-    <div className={styles.Mint}>
+    <Card className={styles.Mint}>
       <img src={firstDoll} alt="" className={styles.imgDoll}/>    
       <div className={styles.profilePic}>
         <H3 className={styles.title}>Profile Pic</H3>
@@ -47,6 +47,6 @@ export const Mint:React.FC = () => {
           </div>
         </Card>
       </div>
-    </div>
+    </Card>
   );
 };
