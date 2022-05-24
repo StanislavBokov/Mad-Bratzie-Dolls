@@ -3,7 +3,7 @@
 
 .button {
   
-    border-radius: 5px;
+    border-radius: 10px;
    
 
     &.filled {
@@ -60,7 +60,9 @@
     font-size:18px
 }
 .sm {
-    padding: spacing(2,4);
-    font-size: 18px;
+    padding: spacing(1.5,3,1);
+    // font-size: 18px;
 }
-
+.noSize {
+    padding: 0;
+}
