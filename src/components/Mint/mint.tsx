@@ -7,13 +7,13 @@ export const Mint:React.FC = () => {
   const [indexDoll, setIndexDoll] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
-  setTimeout(() => {
-    if(indexDoll === arrayOfDolls.length -1) {
-      setIndexDoll(0);
-    } else {
-      setIndexDoll(indexDoll + 1);
-    }
-  },500);
+  // setTimeout(() => {
+  //   if(indexDoll === arrayOfDolls.length -1) {
+  //     setIndexDoll(0);
+  //   } else {
+  //     setIndexDoll(indexDoll + 1);
+  //   }
+  // },500);
   
   
   const handleClickMinus = () => {
