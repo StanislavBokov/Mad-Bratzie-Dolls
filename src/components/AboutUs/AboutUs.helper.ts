@@ -1,5 +1,7 @@
+import { frameDoll1, frameDoll2, frameDoll3 } from "../../assets/img";
+
 export const aboutUsHelper = [
-  { title: 'Vision', description: 'Our vision is to create a multi-platform application that a crypto investor need with the highest security.', id: 1 },
-  { title: 'Mission', description: 'Our mission is to simplify for users and combine all the most powerful tools in one place. It can be said that Adora Multi Wallet is "All in one"', id: 2 },
-  { title: 'Solutions', description: 'There are too many applications that users have to download. Each one will have a different operation. Both are consuming storage space and this lead to inefficient asset management for users.', id: 3 }
+  { title: 'Colorful Crazy Pics', description: '10,000 unique Bratzie Dolls.They’re all randomly generated from over 200 different features, with over eight BILLION possible combinations, so that no doll is ever exactly alike.', id: 1, img: frameDoll1 },
+  { title: 'Mystery Boxes', description: 'Owners can take their chance at obtaining rare NFTs by opening Mystery Boxes on the NFT marketplace.  Main ways to obtain Bratzie NFTs are: staking and by simply buying the Mystery Boxes.', id: 2, img: frameDoll2 },
+  { title: 'Trading', description: 'Each MetaRising NFTs will be stored on the blockchain as NFT tokens which can be freely traded on the NFT marketplace.', id: 3, img: frameDoll3 }
 ];

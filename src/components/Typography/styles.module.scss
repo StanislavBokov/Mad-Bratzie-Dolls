@@ -17,8 +17,8 @@
 }
 
 .h4 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 28px;
 }
 .center {
   text-align: center;
@@ -33,11 +33,7 @@
 }
 
 .text {
-  // font-family: 'Nunito';
-  &.exS {
-    font-size: 12px;
-    line-height: 18px;
-  }
+
   &.s {
     font-size: 14px;
     line-height: 20px;
@@ -45,90 +41,33 @@
 
   &.m {
     font-size: 16px;
-    line-height: 22px;
-  }
-
-  &.sm {
-    font-size: 20px;
-    line-height: 26px;
-
-    // @include forDesktopMiddle {
-    //   font-size: 16px;
-    //   line-height: 32px;
-    // }
-  }
-
-  // &.f28 {
-  //   font-size: 28px;
-  //   line-height: 32px;
-  //   @include forDesktopMiddle {
-  //     font-size: 24px;
-  //   }
-  // }
-
-  // &.f36 {
-  //   font-size: 36px;
-  //   line-height: 32px;
-  //   @include forDesktopMiddle {
-  //     font-size: 22px;
-  //   }
-  // }
-
-  &.l {
-    font-size: 18px;
     line-height: 24px;
   }
-  &.sl {
-    font-size: 65px;
-    line-height: 70px;
+
+  &.l {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  &.exl {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
-// .default {
-//   color: var(--typography-default-color);
-// }
+.default {
+  color: var(--typography-default-color);
+}
 
-// .black {
-//   color: var(--typography-black-color);
-// }
+.black {
+  color: var(--typography-black-color);
+}
+.yellow {
+  color: var(--typography-yellow-color)
+}
+.pink {
+  color: var(--typography-pink-color)
+}
 
-// .green {
-//   color: var(--typography-green-color);
-// }
-
-// .greenDark {
-//   color: var(--typography-green-dark-color);
-// }
-
-// .orange {
-//   color: var(--typography-orange-color);
-// }
-
-// .gray {
-//   color: var(--typography-gray-color);
-// }
-
-// .error {
-//   color: var(--typography-error-color);
-// }
-// .acidGreen {
-//   color: var(--typography-defaultGreen-color);
-// }
-
-// .lightGreen {
-//   color: $colorLightGreen;
-// }
-// .acidGreen {
-//   color: var(--typography-defaultGreen-color);
-// }
-
-// .lightGreen {
-//   color: $colorLightGreen;
-// }
-
-// .lightGreen {
-//   color: $colorLightGreen;
-// }
 
 .lightWeight {
   font-weight: 300;

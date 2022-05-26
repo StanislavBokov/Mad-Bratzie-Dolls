@@ -1,13 +1,8 @@
 enum ColorValues {
   default,
-  secondary,
-  error,
-  lightGreen,
-  green,
-  greenDark,
-  orange,
-  gray,
   black,
+  yellow,
+  pink
 }
 
 enum SizeValues {
@@ -16,6 +11,7 @@ enum SizeValues {
   m,
   sm,
   l,
+  exl,
   sl,
   f28,
   f36,
