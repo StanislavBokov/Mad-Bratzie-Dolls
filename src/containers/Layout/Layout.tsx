@@ -8,8 +8,8 @@ export const Layout:FC = () => {
     <div className={styles.main}>
       <Header />
       <Mint />
-      <RoadMap />
       <AboutUs />
+      <RoadMap />
       <FollowUs />
     </div>
   );

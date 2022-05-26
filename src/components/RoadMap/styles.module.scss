@@ -17,21 +17,21 @@
                          'g h .'
                          '. k l'
                          'm n .';
-    grid-template-rows: repeat(2, 170px) 300px 170px 200px;
+    grid-template-rows: repeat(2, 190px) 360px 200px 240px;
     gap: 20px;
 
     .wrapNumber {
-        padding-top:50px
+        padding-top:60px
     }
     .areas {
         border-radius: 20px;
         
         .titleCard {
-            padding-bottom: spacing(1) ;
+            padding-bottom: spacing(3) ;
         }
     }
     .areas:nth-child(3) {
-        height: 320px;
+        height: 360px;
     }
     .areas:first-child {
         grid-area: a;
@@ -46,16 +46,18 @@
         grid-area: l;
     }
     .areas:nth-child(5) {
+        height: 240px;
         grid-area: m;
     }
     .num {
         width: 85px;
         height: 85px;
         border-radius: 50%;
-        background-color: rgb(212, 228, 223);
+        background: var(--card-default-background);;
         text-align: center;
         line-height: 85px;
-        font-size: 24px;
+        font-size: 28px;
+        color: var(--typography-default-color)
     }
     .divider:first-child,
     .divider:last-child {
@@ -63,18 +65,18 @@
     }
     .divider {
         width: 5px;
-        height: 45px;
-        background-color: rgb(212, 228, 223);
+        height: 55px;
+        background:rgb(32, 29, 29);
         transform: translateX(40px);
     }
     .divider:nth-child(6) {
-        height: 140px;
+        height: 165px;
     }
     .divider:nth-child(9) {
-        height: 115px;
+        height: 150px;
     }
     .divider:nth-child(12) {
-        height: 80px;
+        height: 100px;
     }
 }
 
@@ -92,9 +94,6 @@
     .areas {
         max-width: 500px;
     }
-    .areas:nth-child(3) {
-        height: 300px;
-    }
    } 
 }
 
@@ -107,7 +106,7 @@
     .roadWraper {
         padding:spacing(0);
         max-width: 350px;
-        grid-template-rows: 200px 170px 440px 180px 240px;
+        grid-template-rows: 200px 170px 420px 200px 240px;
         gap: 10px;
         .divider {
             transform: translateX(24px);
@@ -115,19 +114,19 @@
         .areas {
             padding: spacing(2);
             border-radius: 15px;
-            height: 200px;
+            height: 180px;
         }
         .areas:nth-child(2) {
             height: 170px;
         }
         .areas:nth-child(3) {
-            height: 440px;
+            height: 420px;
         }
         .areas:nth-child(4) {
-            height: 180px;
+            height: 200px;
         }
         .areas:nth-child(5) {
-            height: 240px;
+            height: 270px;
         }
 
         .wrapNumber {

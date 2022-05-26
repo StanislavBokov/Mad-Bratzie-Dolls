@@ -2,13 +2,22 @@
 @import '../../assets/styles/mixins';
 
 .wrapper {
-  background: var(--card-default-background);
-  border: 1px solid var(--card-default-border);
- 
+  // background: rgb(182, 165, 165)
+  // border: 1px solid var(--card-default-border);
+
 }
 .md {
   padding: spacing(4);
 }
 .sm {
   padding: spacing(2)
+}
+.light {
+  background-color: var(--card-light-background);
+  box-shadow: 0 0 15px rgba(248, 110, 214, 0.69);
+}
+
+.dark {
+  background: var(--card-default-background);
+    border: 1px solid white
 }

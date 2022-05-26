@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { H3, Card, Text, Button } from "../index";
+import { H2, H3, Card, Text, Button } from "../index";
 import { arrayOfDolls } from "../../assets/img";
 import styles from './styles.module.scss';
 
@@ -31,30 +31,24 @@ export const Mint:React.FC = () => {
     <Card className={styles.Mint}>
       <img src={arrayOfDolls[indexDoll]} alt="" className={styles.imgDoll}/>    
       <div className={styles.profilePic}>
-        <H3 className={styles.title}>Profile Pic</H3>
-        <Card size="sm" className={styles.cardPrice}>
-          <Text>Price</Text>
-          <div>
-            <div className={styles.wrapBNBAmount}>
-              <Text>0.5</Text> 
-              <Text>BNB</Text>  
-            </div>
-            <Text>$ 22.03</Text> 
+        <H2 className={styles.title}>Profile Pic</H2>
+        <Card size="sm" className={styles.cardPrice} colorBG="light">
+          <Text color="black" size="exl">Price</Text>
+          <div className={styles.amountETH}>
+            <H3 color="pink" weight="bold">0.002 ETH</H3> 
+            <Text color="black">$ 22.03</Text> 
           </div>
-          <Text>Quantity</Text>
+          <Text color="black" size="exl">Quantity</Text>
           <div className={styles.btnWraper}>
             <div className={styles.wrapNumBtn}>
               <div className={styles.btnMinus} onClick={handleClickMinus}>-</div>
-              <Text size="l" weight="regular">{quantity > 9 ? quantity : `0${quantity}`}</Text>
+              <Text size="l" color="black" weight="regular">{quantity > 9 ? quantity : `0${quantity}`}</Text>
               <div className={styles.btnPlus} onClick={handleClickPlus}>+</div>
             </div>
             <Button 
-              className={styles.btnMint} size="sm" variant="outlined">MINT</Button>
+              className={styles.btnMint} size="sm">Mint</Button>
           </div>
-          <div className={styles.maxAllowed}>
-            <Text>Max allowed</Text>
-            <Text>40 per transaction</Text>
-          </div>
+          <Text color="black" size="l" weight="light">Max allowed 40 per transaction</Text>
         </Card>
       </div>
     </Card>

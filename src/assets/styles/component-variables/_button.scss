@@ -6,16 +6,16 @@ $buttonColorsDefault: (
 
     // border
     'button-filled-default-border': $colorBlack,
-    'button-filled-hover-border': $colorRed,
-    'button-filled-active-border': $colorBlue,
+    'button-filled-hover-border': $colorPink,
+    'button-filled-active-border': $colorPink5,
     'button-filled-disabled-border': $colorBlack,
     
 
     // background
 
     'button-filled-default-background': $colorWhite,
-    'button-filled-hover-background': $colorRed,
-    'button-filled-active-background': $colorBlue,
+    'button-filled-hover-background': $colorWhite,
+    'button-filled-active-background': $colorWhite,
     'button-filled-disabled-background': $colorWhite,
 
     /// outlined
