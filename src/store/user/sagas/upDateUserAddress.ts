@@ -13,12 +13,18 @@ export function* upDateUserWorker() {
     const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545');
     const accounts = yield web3.eth.requestAccounts();
     
-    const contactList = yield new web3.eth.Contract(abi, CONTACT_ADDRESS);
-    contactList.methods.count().call().then((data) => console.log(data));
+    console.log(`account: ${accounts}`);
+    
+    const contract = yield new web3.eth.Contract(abi, CONTACT_ADDRESS);
+    contract.methods.PRICE().call().then((data) => console.log(data));
+    contract.methods.mintNFT(1).call();
+    
+    
+    // contract.methods.contractBalance().call().then((data) => console.log(data));
+  
     
     
     yield put(updateUserState({ address:accounts }));
-    console.log(accounts[0]);
     
       
   } catch (err) {
